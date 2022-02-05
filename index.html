@@ -7,18 +7,49 @@
   <title>Chris Miller</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
     rel="stylesheet" />
+
+  <!-- Bootstrap
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ed6f73baf6.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
+
+<nav class="nav-block">
+  <i class="fas fa-bars menu-toggle"></i>
+  <div id="menu" class="menu-pulldown pulldown">
+    <ul class="menu-items">
+      <li class="menu-item"> <a href="#contact-me">
+        Contact </a>
+      </li>
+      <li class="menu-item"> <a href="https://github.com/cmmille">
+        Github </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
   <!-- Intro block -->
   <div class="firstBlock">
+
     <h1>I'm Chris.</h1>
     <h3>plant biologist, software developer, wildlife photographer.</h3>
 
@@ -88,12 +119,12 @@
   </div>
 
   <!-- Contact me block -->
-  <div class="contactMe">
+  <div id="contact-me">
     <hr class="dotrule">
     <h2>Get in touch</h2>
     <p>Do you have any questions for me? I'd love to chat!</p>
     <a class="btn" href="mailto:cmmiller.bio@gmail.com">Contact Me</a>
-    
+
   </div>
 
   <!-- Attribution for images -->
@@ -117,6 +148,12 @@
     </span>
 
   </div>
+
+  <!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+
 </body>
 
 </html>

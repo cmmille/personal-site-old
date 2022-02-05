@@ -3,10 +3,51 @@ body {
   font-family: "Merriweather", sans-serif;
 }
 
+/****** Menu ******/
+.nav-block{
+  background-color: #e4f9f5;
+  text-align: right;
+}
+.menu-toggle {
+  font-size: 2rem;
+  color: #11999e;
+  border: none;
+  margin: 5% 5% 0;
+}
+.menu-toggle:hover{
+  color: #11cdd4;
+}
+#menu{
+  display: none;
+}
+.pulldown{
+  background-color: #11999e;
+  color: white;
+}
+.menu-pulldown{
+  height: 15vh;
+  margin: 10px 0 0;
+
+}
+.menu-items{
+  font-size: 1.5rem;
+  margin: auto 5%;
+  list-style: none;
+  line-height: 2;
+}
+.menu-item:hover {
+  color: #30e3cb;
+}
+
 /****** TEXT SELECTORS ******/
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
 h1 {
   font-family: "Sacramento", cursive;
   font-size: 6rem;
+  margin-top: 0;
   margin-bottom: 5vh;
   color:#11999e;
 }
@@ -65,12 +106,6 @@ h4{
   size: 0.1rem;
 }
 /****** OTHER SELECTORS ******/
-a {
-  color: #11999e;
-}
-a:hover {
-  color: #30e3cb;
-}
 hr {
   border-style: dotted;
   width: 5%;
@@ -87,7 +122,7 @@ hr {
   background-color: #e4f9f5;
   text-align: center;
   color: #40514e;
-  padding: 5vh;
+  padding: 2vh;
   padding-bottom: 0;
 }
 .sceneryImages{
@@ -113,7 +148,7 @@ hr {
   line-height: 2;
   overflow: hidden;
 }
-.contactMe{
+#contact-me{
   margin: auto;
   color: #11999e;
   text-align: center;
