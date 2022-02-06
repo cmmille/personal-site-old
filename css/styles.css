@@ -1,3 +1,15 @@
+/****** General ******/
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1vh;
+}
 body {
   margin: auto;
   font-family: "Merriweather", sans-serif;
@@ -39,85 +51,7 @@ body {
   color: #30e3cb;
 }
 
-/****** TEXT SELECTORS ******/
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 6rem;
-  margin-top: 0;
-  margin-bottom: 5vh;
-  color:#11999e;
-}
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 1vh;
-}
-h3 {
-  font-size: 1.25rem;
-  font-weight: normal;
-  padding-bottom: 10%;
-  margin-top: 0;
-  margin-bottom: 5vh;
-}
-h4{
-  font-size: 1.25em;
-  text-align: left;
-  margin: auto;
-  margin-bottom: 0;
-  color: #11999e;
-}
-.footerText {
-  margin: auto;
-  position: absolute;
-  top:50%;
-  right: 0;
-  padding: 1vh;
-  color: #ffffff;
-}
-.attributionText{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: small;
-  margin: 10px;
-}
-.webLinks {
-  text-align: center;
-  top: 10%;
-  left: 0;
-  text-decoration: none;
-  margin: auto 3%;
-  color: #40514e;
-}
-.webLinks:hover {
-  color: #11999e;
-}
-#skillText{
-  color: #11999e;
-}
-#copyrightText {
-  text-align: center; 
-  left: 0;
-  size: 0.1rem;
-}
-/****** OTHER SELECTORS ******/
-hr {
-  border-style: dotted;
-  width: 5%;
-  border-width: 0.5rem;
-  border-top: none;
-  color:#11cdd4;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-/****** BLOCK SELECTORS ******/
-
+/****** Intro ******/
 .firstBlock {
   background-color: #e4f9f5;
   text-align: center;
@@ -128,73 +62,21 @@ hr {
 .sceneryImages{
   position: relative;
 }
-.secondBlock {
-  background-color: #11999e;
-  color: #ffffff;
-  text-align: center;
-  padding: 5%;
+.firstBlock h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+  margin-top: 0;
+  margin-bottom: 5vh;
+  color:#11999e;
+}
+.firstBlock h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  padding-bottom: 10%;
+  margin-top: 0;
+  margin-bottom: 5vh;
 }
 
-.skills{
-  display:flex;
-  align-items: center;
-  margin-right: 15%;
-}
-.skillBlock {
-  color: #40514e;
-  text-align: left;
-  width: 75%;
-  margin: 30px auto;
-  line-height: 2;
-  overflow: hidden;
-}
-#contact-me{
-  margin: auto;
-  color: #11999e;
-  text-align: center;
-  width: 50%;
-}
-.flaticon {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.footer {
-  margin: 0;
-  background-color:#11cdd4;
-  height: 10vh;
-  color: #e4f9f5;
-  font-size: 1em;
-  text-align: right;
-  padding: 2vw;
-  position: relative;
-}
-/****** IMAGE SELECTORS ******/
-.introImage {
-  width:10vh;
-  height: 10vh;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: #30e3ca;
-  border-width: 0.3em;
-  padding: 5%;
-  margin: 30px 50px;
-  background-size: 65%;
-  background-repeat: no-repeat;
-  background-position: center;
-  float: left;
-
-}
-.introImage:hover {
-  border-color: #11999e;
-  border-radius: 25%;
-}
-.plantImage {
-  background-image: url(https://cdn-icons-png.flaticon.com/512/892/892926.png);
-}
-.computerImage {
-  background-image: url(https://cdn-icons-png.flaticon.com/512/2933/2933245.png);
-}
 .birdImage {
   background-image: url(https://cdn-icons-png.flaticon.com/512/1230/1230870.png);
 }
@@ -215,14 +97,110 @@ hr {
   right: 17%;
   bottom: 5%;
 }
-/****** BUTTON ******/
+
+/****** About me ******/
+.secondBlock {
+  background-color: #11999e;
+  color: #ffffff;
+  text-align: center;
+  padding: 5%;
+}
+
+/****** Skills ******/
+.dot-rule {
+  border-style: dotted;
+  width: 5%;
+  border-width: 0.5rem;
+  border-top: none;
+  color:#11cdd4;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.skills{
+  display:flex;
+  align-items: center;
+  margin-right: 15%;
+}
+.skillBlock {
+  color: #40514e;
+  text-align: left;
+  width: 75%;
+  margin: 30px auto;
+  line-height: 2;
+  overflow: hidden;
+}
+#skillText{
+  color: #11999e;
+}
+
+.skills h4{
+  font-size: 1.25em;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 0;
+  color: #11999e;
+}
+.skills-image {
+  width:10vh;
+  height: 10vh;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #30e3ca;
+  border-width: 0.3em;
+  padding: 5%;
+  margin: 30px 50px;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.skills-image:hover {
+  border-color: #11999e;
+  border-radius: 25%;
+}
+
+.plantImage {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/892/892926.png);
+}
+.computerImage {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/2933/2933245.png);
+}
+
+.skillBlock a {
+  color: #11999e;
+}
+.skillBlock a:hover{
+  color: #30e3ca;
+}
+/* Adjust block for mobile */
+@media only screen and (max-width: 600px){
+  .skills{
+    display: inline-block;
+    margin: auto;
+  }
+  .skills-image{
+    margin: auto;
+  }
+  .skillBlock {
+    text-align: center;
+  }
+  .skillBlock h4 {
+    text-align: center;
+  }
+}
+
+/****** Contact ******/
+#contact-me{
+  margin: auto;
+  color: #11999e;
+  text-align: center;
+  width: 75%;
+}
+#contact-me p{
+  color: #40514e;
+}
 .btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  background: #11999e;
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -237,12 +215,66 @@ hr {
 }
 
 .btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+  background: #30e3cb;  text-decoration: none;
   color: white;
 }
+
+/****** Footer ******/
+
+.footerText {
+  margin: auto;
+  position: absolute;
+  top:50%;
+  right: 0;
+  padding: 1vh;
+  color: #ffffff;
+}
+.attributionText{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: small;
+  margin: 10px;
+}
+.attributionText a {
+  color: #11999e;
+}
+.attributionText a:hover{
+  color: #30e3ca;
+}
+.webLinks {
+  text-align: center;
+  top: 10%;
+  left: 0;
+  text-decoration: none;
+  margin: auto 3%;
+  color: #40514e;
+}
+.webLinks:hover {
+  color: #30e3ca;
+}
+
+#copyrightText {
+  text-align: center; 
+  left: 0;
+  size: 0.1rem;
+}
+
+.flaticon {
+  margin: 10% 0 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  margin: 0;
+  background-color:#11999e;
+  height: 10vh;
+  color: #e4f9f5;
+  font-size: 1em;
+  text-align: right;
+  padding: 2vw;
+  position: relative;
+}
+
+
