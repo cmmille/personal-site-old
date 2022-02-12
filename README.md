@@ -1,6 +1,5 @@
 # cmmille.github.io
 My personal portfolio website.
 
-# Link
+# View this page
 https://cmmille.github.io/
-
